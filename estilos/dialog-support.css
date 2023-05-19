@@ -80,6 +80,10 @@
     font-size:1.8rem;
     font-weight: 700;
   }
+  .content-cards-back .check-card p{
+    color: var(--Strong-cyan);
+    font-weight: 600;
+  }
   label:hover{
     color: var(--Strong-cyan);
   }
@@ -95,11 +99,14 @@
   }
   div article.content-amount-card-support{
     border-top: solid 0.2rem var(--Medium-gray);
-    display: none;
-    justify-content: space-between;
-    align-items: center;
     margin: 2rem;
     padding: 3rem 0 0 0;
+  }
+  div article.content-amount-card-support .elements-card{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
   div article.content-amount-card-support section:last-child{
     display: flex;
@@ -118,7 +125,7 @@
     font-weight: 500;
     caret-color: var(--Strong-cyan);
   }
-  div article.content-amount-card-support section button{
+  div article.content-amount-card-support section .button-value{
     width: 10rem;
     height: 5.2rem;
     background-color: var(--Dark-cyan);
@@ -126,6 +133,21 @@
     color: white;
     border-radius: 2.5rem;
   }
+  div article.content-amount-card-support section .button-value:hover{
+    background-color: var(--Strong-cyan);
+    cursor: pointer;
+  }
+ .button-value-disabled:disabled{
+    width:10rem ;
+    height: 5.2rem;
+    border: none;
+    color: black;
+    border-radius: 2.5rem;
+    background-color: rgb(230, 230, 230);
+  }
 .oculto{
     display: none;
+}
+.show{
+  display: flex;
 }
